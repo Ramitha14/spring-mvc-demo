@@ -1,8 +1,10 @@
 package com.stackroute;
 
 public class User {
-    String name;
-
+    //creating data variables
+    private String name;
+    private String password;
+    //getters and setters for the data variables
     public String getName() {
         return name;
     }
@@ -11,11 +13,11 @@ public class User {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                '}';
+    public String getPassword() {
+        return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
